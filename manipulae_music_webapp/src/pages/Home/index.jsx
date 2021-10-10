@@ -40,6 +40,7 @@ function Home() {
     useEffect(() => {
         api.get(`/chart/?limit=${loadMoreTracks}`)
             .then((response) => {
+                console.log(response);
                 const {
                     data: {
                         tracks: { data },
